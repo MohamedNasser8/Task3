@@ -7,7 +7,7 @@ ex:
 
  the value of the variable is specified in the declaration; there's no way to set it later!
 
-
+<br>
 
 
 
@@ -24,7 +24,7 @@ ex:
 
 
 
-
+<br>
 
 3)It's particularly useful to declare reference parameters to functions as const references:
 ex: bool verifyObjectCorrectness (const myObj& obj);
