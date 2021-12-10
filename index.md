@@ -25,6 +25,7 @@ ex:
 ex:
 ```
 bool verifyObjectCorrectness (const myObj& obj);
+
 ```
 
 Here, a myObj object is passed by reference into verifyObjectCorrectness. 
