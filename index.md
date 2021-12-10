@@ -11,8 +11,11 @@ ex:
                                                                       
  2) Const Pointer
  The syntax for declaring a pointer to constant data is :
+ 
+ ```
  const int *p_int;
-
+ ```
+ 
  You can think of this as reading that *p_int is a "const int". So the pointer may be changeable,
  but you definitely can't touch what p_int points to. The key here is that the const appears before the *. 
 
@@ -56,9 +59,12 @@ ex:
 
 ![This is an image](/Const_ov.png) 
 
+```
 output:
 fun() called
 fun() const called
+```
+
 ‘const void fun()’ is called on const object and ‘void fun()’ is called on non-const object
 <br>
 <br>
