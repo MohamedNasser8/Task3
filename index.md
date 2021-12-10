@@ -36,7 +36,7 @@ For safety's sake, const is used to ensure that verifyObjectCorrectness cannot c
 <br>
 <br>
 <br>
-4)hConst Functions:
+4)Const Functions:
  Once you have a const object,
  it cannot be assigned to a non-const reference or use functions that are known to be capable of changing the state of the object
  it means you need a way to state that a function should not make changes to an object ,this way can be achieved by declaring the function constant
@@ -46,13 +46,13 @@ For safety's sake, const is used to ensure that verifyObjectCorrectness cannot c
 
 ![This is an image](/Const_fun.png) 
 
-
 important notes:
 .Const functions can always be called
 .Non-const functions can only be called by non-const objects
 <br>
 <br>
-5)Const Overloading
+<br>
+5)<p>Const Overloading</p>
 C++ allows member methods to be overloaded on the basis of const type.
 Overloading on the basis of const type can be useful when a function return reference or pointer.
 We can make one function const, that returns a const reference or const pointer,
