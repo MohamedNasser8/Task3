@@ -8,7 +8,7 @@ ex:
  the value of the variable is specified in the declaration; there's no way to set it later!
 
 <br>
-
+                                                                      
  2) Const Pointer
  The syntax for declaring a pointer to constant data is :
  const int *p_int;
@@ -22,7 +22,10 @@ ex:
   
 <br>
 3)It's particularly useful to declare reference parameters to functions as const references:
-ex: bool verifyObjectCorrectness (const myObj& obj);
+ex:
+```
+bool verifyObjectCorrectness (const myObj& obj);
+```
 
 Here, a myObj object is passed by reference into verifyObjectCorrectness. 
 For safety's sake, const is used to ensure that verifyObjectCorrectness cannot change the object.
