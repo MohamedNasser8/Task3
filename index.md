@@ -19,7 +19,7 @@ ex:
  but you definitely can't touch what p_int points to. The key here is that the const appears before the *. 
 
   if you just want the address stored in the pointer itself to be const, then you have to put const after the *:
-  ![This is an image](/images/Const_BA.png)
+  ![This is an image](/Const_BA.png)
 
 
 
@@ -43,7 +43,7 @@ For safety's sake, const is used to ensure that verifyObjectCorrectness cannot c
  to declare the function const you should put const at the end of the function.
  example:
 
-![This is an image](/images/Const_fun.png) 
+![This is an image](/Const_fun.png) 
 
 
 important notes:
@@ -60,7 +60,7 @@ We can make one function const, that returns a const reference or const pointer,
 other non-const function, that returns non-const reference or pointer.
 ex:
 
-![This is an image](/images/Const_ov.png) 
+![This is an image](/Const_ov.png) 
 
 output:
 fun() called
@@ -83,7 +83,7 @@ It can be used for access only, and can’t be used for modification.
 If we try to modify the value of the element using const iterator then it generates an error.
 ex:
 
-![This is an image](/images/Const_it.png) 
+![This is an image](/Const_it.png) 
 
 
 
