@@ -108,6 +108,7 @@ Consider the following program. The output of the program is undefined.
 The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to modify ‘val’ using const_cast.
 
 ![This is an image](/Const_casta.png)
-
-<h1>& Usage</h1>
+<hr>
+<h3>
+<h2>& Usage</h2>
 
