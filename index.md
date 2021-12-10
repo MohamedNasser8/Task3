@@ -24,8 +24,7 @@ ex:
 3)It's particularly useful to declare reference parameters to functions as const references:
 ex:
 ```
-bool verifyObjectCorrectness (const myObj& obj);
-
+ bool verifyObjectCorrectness (const myObj& obj);
 ```
 
 Here, a myObj object is passed by reference into verifyObjectCorrectness. 
