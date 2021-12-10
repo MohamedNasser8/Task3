@@ -18,11 +18,7 @@ ex:
 
   if you just want the address stored in the pointer itself to be const, then you have to put const after the *:
   ![This is an image](/Const_BA.png)
-
-
-
 <br>
-
 3)It's particularly useful to declare reference parameters to functions as const references:
 ex: bool verifyObjectCorrectness (const myObj& obj);
 
@@ -43,6 +39,7 @@ For safety's sake, const is used to ensure that verifyObjectCorrectness cannot c
 important notes:
 .Const functions can always be called
 .Non-const functions can only be called by non-const objects
+<br>
 <br>
 5)Const Overloading
 C++ allows member methods to be overloaded on the basis of const type.
