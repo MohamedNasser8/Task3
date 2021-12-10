@@ -2,8 +2,8 @@
 
 1) Declaring a constant variable it can be used before and after the data type 
 ex:
+  ![This is an image](/Const_A.png)
 
-<img src="/Const_A" alt="Girl in a jacket">
  the value of the variable is specified in the declaration; there's no way to set it later!
 
 
@@ -101,11 +101,11 @@ For example, in the following program fun() receives a normal pointer, but a poi
 be passed with the help of const_cast.
 ex:
 
-![This is an image](/images/Const_cast.png)
+![This is an image](/Const_cast.png)
 
 
 It is undefined behavior to modify a value which is initially declared as const.
 Consider the following program. The output of the program is undefined.
 The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to modify ‘val’ using const_cast.
 
-![This is an image](/images/Const_casta.png)
+![This is an image](/Const_casta.png)
