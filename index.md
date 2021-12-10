@@ -9,9 +9,6 @@ ex:
 
 <br>
 
-
-
-
  2) Const Pointer
  The syntax for declaring a pointer to constant data is :
  const int *p_int;
@@ -31,11 +28,7 @@ ex: bool verifyObjectCorrectness (const myObj& obj);
 
 Here, a myObj object is passed by reference into verifyObjectCorrectness. 
 For safety's sake, const is used to ensure that verifyObjectCorrectness cannot change the object.
-
-
-
-
-
+<br>
 4)Const Functions:
  Once you have a const object,
  it cannot be assigned to a non-const reference or use functions that are known to be capable of changing the state of the object
@@ -50,10 +43,7 @@ For safety's sake, const is used to ensure that verifyObjectCorrectness cannot c
 important notes:
 .Const functions can always be called
 .Non-const functions can only be called by non-const objects
-
-
-
-
+<br>
 5)Const Overloading
 C++ allows member methods to be overloaded on the basis of const type.
 Overloading on the basis of const type can be useful when a function return reference or pointer.
@@ -69,14 +59,7 @@ fun() const called
 
 
 ‘const void fun()’ is called on const object and ‘void fun()’ is called on non-const object
-
-
-
-
-
-
-
-
+<br>
 6)Const Iterators:
 A const iterator points to an element of constant type which means the element which is being pointed to by a const_iterator can’t be modified.
 Though we can still update the iterator(i.e., the iterator can be incremented or decremented but the element it points to can not be changed). 
@@ -86,14 +69,7 @@ ex:
 
 ![This is an image](/Const_it.png) 
 
-
-
-
-
-
-
-
-
+<br>
 
 7)Const cast:
 const_cast is used to cast away the constness of variables.
