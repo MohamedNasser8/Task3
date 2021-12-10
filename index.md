@@ -3,7 +3,7 @@
 1) Declaring a constant variable it can be used before and after the data type 
 ex:
 
-![This is an image](/images/Const_A.png)
+<img src="/Const_A" alt="Girl in a jacket">
  the value of the variable is specified in the declaration; there's no way to set it later!
 
 
