@@ -6,7 +6,7 @@ ex:
   ![This is an image](/Const_A.png)
 
  the value of the variable is specified in the declaration; there's no way to set it later!
-
+<hr>
 <br>
                                                                       
  2) Const Pointer
