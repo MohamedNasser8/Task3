@@ -56,9 +56,8 @@ ex:
 output:
 fun() called
 fun() const called
-
-
 ‘const void fun()’ is called on const object and ‘void fun()’ is called on non-const object
+<br>
 <br>
 6)Const Iterators:
 A const iterator points to an element of constant type which means the element which is being pointed to by a const_iterator can’t be modified.
