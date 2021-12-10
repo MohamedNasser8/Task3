@@ -89,3 +89,9 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
 ![This is an image](/Const_casta.png)
 
 <h1>& Usage</h1>
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
