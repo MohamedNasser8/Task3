@@ -17,7 +17,9 @@ ex:
  but you definitely can't touch what p_int points to. The key here is that the const appears before the *. 
 
   if you just want the address stored in the pointer itself to be const, then you have to put const after the *:
+  
   ![This is an image](/Const_BA.png)
+  
 <br>
 3)It's particularly useful to declare reference parameters to functions as const references:
 ex: bool verifyObjectCorrectness (const myObj& obj);
@@ -25,7 +27,7 @@ ex: bool verifyObjectCorrectness (const myObj& obj);
 Here, a myObj object is passed by reference into verifyObjectCorrectness. 
 For safety's sake, const is used to ensure that verifyObjectCorrectness cannot change the object.
 <br>
-4)Const Functions:
+4)hConst Functions:
  Once you have a const object,
  it cannot be assigned to a non-const reference or use functions that are known to be capable of changing the state of the object
  it means you need a way to state that a function should not make changes to an object ,this way can be achieved by declaring the function constant
@@ -82,3 +84,5 @@ Consider the following program. The output of the program is undefined.
 The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to modify ‘val’ using const_cast.
 
 ![This is an image](/Const_casta.png)
+
+<h1>& Usage</h1>
