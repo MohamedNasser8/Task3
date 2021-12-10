@@ -1,6 +1,6 @@
 <h2>Const Usages</h2> 
 
-1)<h3> Declaring a constant variable</h3> it can be used before and after the data type 
+<h3>1) Declaring a constant variable</h3> it can be used before and after the data type 
 ex:
 
   ![This is an image](/Const_A.png)
@@ -9,7 +9,7 @@ ex:
 <hr>
 <br>
                                                                       
- 2) <h3>Const Pointer</h3>
+ <h3>2) Const Pointer</h3>
  The syntax for declaring a pointer to constant data is :
  
  ```
@@ -33,7 +33,7 @@ const int* const p_int;
 <br>
 <br>
 <hr>
-3)It's particularly useful to declare reference parameters to functions as const references:
+<h3>3) It's particularly useful to declare reference parameters to functions as const references</h3>
 ex:
 
 ```
@@ -46,7 +46,7 @@ For safety's sake, const is used to ensure that verifyObjectCorrectness cannot c
 <br>
 <br>
 <hr>
-4)<h3>Const Functions<h3>
+<h3>4) Const Functions</h3>
  Once you have a const object,
  it cannot be assigned to a non-const reference or use functions that are known to be capable of changing the state of the object
  it means you need a way to state that a function should not make changes to an object ,this way can be achieved by declaring the function constant
@@ -63,7 +63,7 @@ important notes:
 <br>
 <br>
 <hr>
-5)<h3>Const Overloading</h3>
+<h3>5) Const Overloading</h3>
 C++ allows member methods to be overloaded on the basis of const type.
 Overloading on the basis of const type can be useful when a function return reference or pointer.
 We can make one function const, that returns a const reference or const pointer,
@@ -82,7 +82,7 @@ fun() const called
 <br>
 <br>
 <hr>
-6)<h3>Const Iterators</h3>
+<h3>6) Const Iterators</h3>
 A const iterator points to an element of constant type which means the element which is being pointed to by a const_iterator can’t be modified.
 Though we can still update the iterator(i.e., the iterator can be incremented or decremented but the element it points to can not be changed). 
 It can be used for access only, and can’t be used for modification. 
@@ -93,7 +93,7 @@ ex:
 
 <br>
 <hr>
-7)<h3>Const cast</h3>
+<h3>7) Const cast</h3>
 const_cast is used to cast away the constness of variables.
 const_cast can be used to pass const data to a function that doesn’t receive const.
 For example, in the following program fun() receives a normal pointer, but a pointer to a const can
