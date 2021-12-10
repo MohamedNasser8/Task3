@@ -23,6 +23,14 @@ ex:
   
   ![This is an image](/Const_BA.png)
   
+
+<p>You can make const pointer and at the same type points to a const data using this syntax</p>
+
+```
+const int* const p_int; 
+```
+<p>in this case we cant change the pointer or the pointee</p>
+<br>
 <br>
 3)It's particularly useful to declare reference parameters to functions as const references:
 ex:
