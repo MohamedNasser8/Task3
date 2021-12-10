@@ -1,4 +1,4 @@
-Const Usages: 
+<h2>Const Usages</h2> 
 
 1) Declaring a constant variable it can be used before and after the data type 
 ex:
@@ -53,3 +53,59 @@ important notes:
 
 
 
+5)Const Overloading
+C++ allows member methods to be overloaded on the basis of const type.
+Overloading on the basis of const type can be useful when a function return reference or pointer.
+We can make one function const, that returns a const reference or const pointer,
+other non-const function, that returns non-const reference or pointer.
+ex:
+
+![This is an image](/images/Const_ov.png) 
+
+output:
+fun() called
+fun() const called
+
+
+‘const void fun()’ is called on const object and ‘void fun()’ is called on non-const object
+
+
+
+
+
+
+
+
+6)Const Iterators:
+A const iterator points to an element of constant type which means the element which is being pointed to by a const_iterator can’t be modified.
+Though we can still update the iterator(i.e., the iterator can be incremented or decremented but the element it points to can not be changed). 
+It can be used for access only, and can’t be used for modification. 
+If we try to modify the value of the element using const iterator then it generates an error.
+ex:
+
+![This is an image](/images/Const_it.png) 
+
+
+
+
+
+
+
+
+
+
+7)Const cast:
+const_cast is used to cast away the constness of variables.
+const_cast can be used to pass const data to a function that doesn’t receive const.
+For example, in the following program fun() receives a normal pointer, but a pointer to a const can
+be passed with the help of const_cast.
+ex:
+
+![This is an image](/images/Const_cast.png)
+
+
+It is undefined behavior to modify a value which is initially declared as const.
+Consider the following program. The output of the program is undefined.
+The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to modify ‘val’ using const_cast.
+
+![This is an image](/images/Const_casta.png)
