@@ -23,6 +23,7 @@ ex:
 <br>
 3)It's particularly useful to declare reference parameters to functions as const references:
 ex:
+
 ```
  bool verifyObjectCorrectness (const myObj& obj);
 ```
