@@ -34,6 +34,8 @@ ex:
 Here, a myObj object is passed by reference into verifyObjectCorrectness. 
 For safety's sake, const is used to ensure that verifyObjectCorrectness cannot change the object.
 <br>
+<br>
+<br>
 4)hConst Functions:
  Once you have a const object,
  it cannot be assigned to a non-const reference or use functions that are known to be capable of changing the state of the object
