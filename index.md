@@ -155,30 +155,28 @@ using namespace std;
 // Function that demonstrate const iterators
 void constIterator(vector<int>& v1)
 {
-	// Declare a const_itearor
-	// to a vector
-	vector<int>::const_iterator ci;
+	// Declare a const_iterator to a vector
+	vector<int>::const_iterator c;
 
 	// Printing the elements of the
 	// vector v1 using regular iterator
-	for (ci = v1.begin(); ci < v1.end(); ci++) {
+	for (c = v1.begin(); c < v1.end(); c++) {
 
 
-		//*ci += 1;   ->This line would gives us an error because we are trying to modify the vector element using const iterator 
+		//*c += 1;   ->This line would gives us an error because we are trying to modify the vector element using const iterator 
 
-		cout << *ci << " ";
+		cout << *c << " ";
 	}
 }
 
 int main()
 {
-	// Declaring 2 vectors
-	vector<int> v1 = { 7, 2, 4 };
-	vector<int> v2 = { 5, 7, 0 };
+	// Declaring  vector
+	vector<int> v = { 7, 2, 4 };
 
 	
 	//demonstrates Const iterator
-	constIterator(v2);
+	constIterator(v);
 	return 0;
 }
 
