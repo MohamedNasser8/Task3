@@ -16,9 +16,6 @@ ex:
  const int *p_int;
  ```
  
-  ```
- const int *p_int;
- ```
  
  You can think of this as reading that *p_int is a "const int". So the pointer may be changeable,
  but you definitely can't touch what p_int points to. The key here is that the const appears before the *. 
@@ -139,22 +136,18 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
  
   
  ```
-  
  a &= b; the same as a = a & b;
- 
   ```
   
-  
+  <br>
   <hr>
   <h3>4) Address-of</h3>
   
   
-  ```
-  
+  ``` 
   int x =5;
   int* ptr = &x;
   this ptr contain the Address of x
-  
   ```
   
   ```
@@ -163,6 +156,7 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
  const int *p_int;
  ```
   
+  <br>
   <hr>
   <h3>Pass By Reference</h3>
   <p>You can pass a reference to the function. This can be useful when you need to change the value of the arguments</p> 
