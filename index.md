@@ -313,7 +313,6 @@ Car c2(20);
   ``` 
   int x =5;
   int* ptr = &x;
-  this ptr contain the Address of x
   ```
   
   ```
