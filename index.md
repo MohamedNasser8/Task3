@@ -16,6 +16,10 @@ ex:
  const int *p_int;
  ```
  
+  ```
+ const int *p_int;
+ ```
+ 
  You can think of this as reading that *p_int is a "const int". So the pointer may be changeable,
  but you definitely can't touch what p_int points to. The key here is that the const appears before the *. 
 
