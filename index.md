@@ -3,7 +3,11 @@
 <h3>1) Declaring a constant variable</h3> it can be used before and after the data type 
 ex:
 
-  ![This is an image](/Const_A.png)
+ ```
+ int const x = 5;
+ or
+ const int x = 5;
+ ```
 
  the value of the variable is specified in the declaration; there's no way to set it later!
 <hr>
@@ -22,7 +26,10 @@ ex:
 
   if you just want the address stored in the pointer itself to be const, then you have to put const after the *:
   
-  ![This is an image](/Const_BA.png)
+  ```
+  int x
+  int* const p_int = &x;
+  ```
   
 
 <p>You can make const pointer and at the same type points to a const data using this syntax</p>
@@ -55,7 +62,27 @@ For safety's sake, const is used to ensure that verifyObjectCorrectness cannot c
  to declare the function const you should put const at the end of the function.
  example:
 
-![This is an image](/Const_fun.png) 
+```
+#include <iostream>
+using namespace std;
+ 
+class Car {
+    int value;
+ 
+public:
+    Car(int v = 0) { value = v; }
+ 
+    int getValue() const {
+    return value; }
+};
+ 
+int main()
+{
+    Car c(20);
+    cout << c.getValue();
+    return 0;
+}
+```
 
 important notes:
 .Const functions can always be called
@@ -71,7 +98,36 @@ We can make one function const, that returns a const reference or const pointer,
 other non-const function, that returns non-const reference or pointer.
 ex:
 
-![This is an image](/Const_ov.png) 
+```
+#include<iostream>
+using namespace std;
+
+class Happy
+{
+protected:
+	int x;
+public:
+	Happy (int i):x(i) { }
+	void fun() const
+	{
+		cout << "fun() const called " << endl;
+	}
+	void fun()
+	{
+		cout << "fun() called " << endl;
+	}
+};
+
+int main()
+{
+	Happy H1 (10);
+	const Happy H2 (20);
+	H1.fun();
+	H2.fun();
+	return 0;
+}
+
+```
 
 ```
 output:
@@ -90,30 +146,142 @@ It can be used for access only, and can’t be used for modification.
 If we try to modify the value of the element using const iterator then it generates an error.
 ex:
 
-![This is an image](/Const_it.png) 
+```
+#include <iostream>
+#include <iterator>
+#include <vector>
+using namespace std;
+
+// Function that demonstrate const iterators
+void constIterator(vector<int>& v1)
+{
+	// Declare a const_itearor
+	// to a vector
+	vector<int>::const_iterator ci;
+
+	// Printing the elements of the
+	// vector v1 using regular iterator
+	for (ci = v1.begin(); ci < v1.end(); ci++) {
+
+
+		//*ci += 1;   ->This line would gives us an error because we are trying to modify the vector element using const iterator 
+
+		cout << *ci << " ";
+	}
+}
+
+int main()
+{
+	// Declaring 2 vectors
+	vector<int> v1 = { 7, 2, 4 };
+	vector<int> v2 = { 5, 7, 0 };
+
+	
+	//demonstrates Const iterator
+	constIterator(v2);
+	return 0;
+}
+
+```
 
 <br>
 <hr>
 <h3>7) Const cast</h3>
 const_cast is used to cast away the constness of variables.
 const_cast can be used to pass const data to a function that doesn’t receive const.
-For example, in the following program fun() receives a normal pointer, but a pointer to a const can
+For example, in the following program Val() receives a normal pointer, but a pointer to a const can
 be passed with the help of const_cast.
 ex:
 
-![This is an image](/Const_cast.png)
+```
+#include <iostream>
+using namespace std;
+  
+int Val(int* pntr)
+    {
+    return (*pntr + 5);
+    }
+    
+int main(void)
+{
+    const int value = 5;
+    const int *ptnr = &value;
+    int *pntr1 = const_cast <int *>(pntr);
+    cout << Val(pntr1);
+    return 0;
+}
+```
 
+```
+Output:
+10
+```
 
 It is undefined behavior to modify a value which is initially declared as const.
-Consider the following program. The output of the program is undefined.
-The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to modify ‘val’ using const_cast.
 
-![This is an image](/Const_casta.png)
+
+```
+#include <iostream>
+using namespace std;
+  
+int Val(int* pntr)
+{
+    *ptr = *pntr + 10;
+    return (*ptr);
+}
+  
+int main(void)
+{
+    const int val = 10;
+    const int *pntr = &val;
+    int *pntr1 = const_cast <int *>(pntr);
+    fun(ptr1);
+    cout << val;
+    return 0;
+}
+```
+
+```
+Output:
+ Undefined Behavior 
+
+reason -> The variable ‘val’ is a const variable and the call ‘Val(ptrn1)’ tries to modify ‘val’ using const_cast.
+```
+
+<hr>
+<h3>8)Const class data member</h3>
+These are data variables in class which are defined using const keyword. 
+They are not initialized during declaration.
+Their initialization is done in the constructor.
+Ex:
+
+```
+class Car
+        {
+
+const int type;
+public:
+
+Car(int n): type(n)   //initializer list
+{
+    cout << "\ni value set: " << i;
+}
+
+   };
+
+    int main()
+  {
+
+Car c1(10);
+Car c2(20);
+     }
+```
+
 <hr>
 <h2>& Usage</h2>
 <h3>1) Logical AND</h3>
   
-  
+ - 
   ```
   if(x < 10 && y < 10)
   ```
