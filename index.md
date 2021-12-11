@@ -153,21 +153,17 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
   
   ```
   
-```
-  
+  ```
   x=&y;
   that means that the two variables have the same address;
-  
-```
-  
+ const int *p_int;
+ ```
   
   <hr>
   <h3>Pass By Reference</h3>
-  <p>You can pass a reference to the function. This can be useful when you need to change the value of the arguments</p>
-  
+  <p>You can pass a reference to the function. This can be useful when you need to change the value of the arguments</p> 
   
 ```
-
   void swapNums(int &x, int &y) {
   int z = x;
   x = y;
@@ -189,6 +185,5 @@ int main() {
 
   return 0;
 }
-
   ```
   
