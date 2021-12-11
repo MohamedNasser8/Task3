@@ -24,7 +24,7 @@ ex:
  You can think of this as reading that *p_int is a "const int". So the pointer may be changeable,
  but you definitely can't touch what p_int points to. The key here is that the const appears before the *. 
 
-  if you just want the address stored in the pointer itself to be const, then you have to put const after the *:
+  if you just want the address stored in the pointer itself to be const, then you have to put const after the *
   
   ```
   int x
@@ -37,6 +37,7 @@ ex:
 ```
 const int* const p_int; 
 ```
+
 <p>in this case we cant change the pointer or the pointee</p>
 <br>
 <br>
@@ -45,11 +46,11 @@ const int* const p_int;
 ex:
 
 ```
- bool verifyObjectCorrectness (const myObj& obj);
+ bool MyObjects (const myObj& obj);
 ```
 
-Here, a myObj object is passed by reference into verifyObjectCorrectness. 
-For safety's sake, const is used to ensure that verifyObjectCorrectness cannot change the object.
+Here, a myObj object is passed by reference into MyObjects. 
+For safety's sake, const is used to ensure that MyObjects cannot change the object.
 <br>
 <br>
 <br>
