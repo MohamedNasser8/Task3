@@ -110,7 +110,6 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
 
 ![This is an image](/Const_casta.png)
 <hr>
-<h3>
 <h2>& Usage</h2>
 <h3>1) Logical AND</h3>
   
@@ -138,8 +137,7 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
  ```
  a &= b; the same as a = a & b;
   ```
-  
-  <br>
+ 
   <hr>
   <h3>4) Address-of</h3>
   
