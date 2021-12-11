@@ -113,28 +113,35 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
 <h2>& Usage</h2>
 <h3>1) Logical AND</h3>
   
+  
   ```
   if(x < 10 && y < 10)
   ```
 
+  
   <hr>  
   
   <h3>2) Bitwise AND</h3>
+  
   
   ```
   z = (x & y); Corresponding bits are and'ed (e.g. 1&0 -> 0)
   ```
   
+  
   <hr>
   
 <h3>3) Bitwise AND Assignment</h3>
  
+  
  ```
  a &= b; the same as a = a & b;
  ```
   
+  
   <hr>
   <h3>4) Address-of</h3>
+  
   
   ```
   int x =5;
@@ -142,14 +149,17 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
   this ptr contain the Address of x
   ```
   
+  
   ```
   x=&y;
   that means that the two variables have the same address;
   ```
   
+  
   <hr>
   <h3>Pass By Reference</h3>
   <p>You can pass a reference to the function. This can be useful when you need to change the value of the arguments</p>
+  
   
   ```
   void swapNums(int &x, int &y) {
