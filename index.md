@@ -135,8 +135,10 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
  
   
  ```
+  
  a &= b; the same as a = a & b;
- ```
+ 
+  ```
   
   
   <hr>
@@ -144,16 +146,19 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
   
   
   ```
+  
   int x =5;
   int* ptr = &x;
   this ptr contain the Address of x
-  ```
-  
   
   ```
+  
+```
+  
   x=&y;
   that means that the two variables have the same address;
-  ```
+  
+```
   
   
   <hr>
@@ -161,7 +166,8 @@ The variable ‘val’ is a const variable and the call ‘fun(ptr1)’ tries to
   <p>You can pass a reference to the function. This can be useful when you need to change the value of the arguments</p>
   
   
-  ```
+```
+
   void swapNums(int &x, int &y) {
   int z = x;
   x = y;
@@ -183,5 +189,6 @@ int main() {
 
   return 0;
 }
+
   ```
   
